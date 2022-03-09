@@ -1,0 +1,1083 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: lato, sans-serif;
+}
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.col-4 {
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0 15px;
+}
+
+#header {
+    width: 1350px;
+    height: 80px;
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 20px 20px 20px;
+
+}
+
+.header-select {
+    margin: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+    margin: 20px 20px 0 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+    transition: .6s;
+
+}
+
+.header-link::before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: orange;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    transform: scale(0);
+    transition: .4s;
+
+}
+
+.header__form {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.header-link:hover:before {
+    transform: scale(1);
+
+}
+
+.header-mix {
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+}
+
+.header-button {
+    width: 163px;
+    height: 54px;
+    background: #0B2330;
+    border-radius: 4px;
+    border: 1px solid #0B2330;
+    cursor: pointer;
+    transition: 2s;
+    color: white;
+
+}
+
+.header-button:hover {
+    transition: .6s;
+    color: black;
+    background: linear-gradient(45deg, #84c1be, #be9ea8);
+}
+
+.header-tx {
+    color: #fffc00;
+    font-weight: 400;
+
+}
+
+.header-links {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-images {
+    width: 450px;
+    height: 750px;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-left: -100px;
+    background-attachment: fixed;
+
+
+}
+
+.user-title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 100px;
+    color: #0B2330;
+
+}
+
+.user-text {
+    font-size: 22px;
+    font-weight: 400;
+    color: #0B2330;
+    margin-top: 32px;
+}
+
+.user-button1 {
+    background: yellow;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-top: 38px;
+
+}
+
+button {
+    outline: none;
+
+}
+
+.user-button2 {
+    background: white;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-top: 38px;
+    margin-left: 10px;
+
+}
+
+.user-button1:hover {
+    transition: 1s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+.user-button2:hover {
+    transition: 1s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+.user-back {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background: #F9C600;
+
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+
+}
+
+.main-blocks {
+    margin-right: 140px;
+
+}
+
+
+.trusted {
+    padding: 180px 0;
+}
+
+.trusted-title {
+    font-weight: 400;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.owl-carousel .owl-item img {
+    width: 150px;
+}
+
+.carousel {
+    padding-top: 10px;
+
+}
+
+/*/modern/*/
+.modern {
+    background: #51CEBC;
+    border-radius: 10px;
+    width: 1330px;
+    height: 500px;
+    display: flex;
+    margin-left: 10px;
+
+}
+
+.modern {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.modern-wrap {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.modern-block1 {
+    transform: translate(-7.5%, -5%);
+
+}
+
+.modern-title {
+    transform: translate(-10%, 70%);
+    font-size: 34px;
+    font-weight: 400;
+    margin-right: 70px;
+    display: flex;
+
+}
+
+.modern-text {
+    transform: translate(-9%, 230%);
+    font-weight: 400;
+    font-size: 22px;
+
+}
+
+/*/modern/*/
+
+/*/analytics/*/
+.analytics-title {
+    font-weight: 400;
+    font-size: 34px;
+    margin: 0 150px 100px 150px;
+
+}
+
+.analytics {
+    margin: 150px 150px 200px 200px;
+}
+
+.analytics-button {
+    background: yellow;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    margin-top: 113px;
+    margin-left: 390px;
+
+
+}
+
+.analytics-button:hover {
+    transition: 1s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+/*/analytics/*/
+
+/*/target/*/
+
+.target {
+    position: absolute;
+    background: #BD78F0;
+    border-radius: 10px;
+    width: 1250px;
+    height: 500px;
+    display: flex;
+    margin-left: 80px;
+
+}
+
+.target-images {
+    position: relative;
+    transform: translate(-20%, -30);
+    margin-top: 100px;
+
+}
+
+.target-wrap {
+    width: 460px;
+    height: 400px;
+    margin-left: 582px;
+
+
+}
+
+.target-title {
+    margin-top: 103px;
+    font-size: 42px;
+    font-weight: 400;
+
+
+}
+
+.target-text {
+    margin-top: 39px;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+/*/target/*/
+
+.over-text {
+    font-weight: 400;
+    color: #6A7981;
+    font-size: 14px;
+
+
+}
+
+.over-informed {
+    margin: 136px 620px 238px 148px;
+
+}
+
+.over-title {
+    font-weight: 400;
+    font-size: 42px;
+    margin: 13px 0 26px 0;
+}
+
+.over-text {
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.block-informed {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+
+}
+
+.block-button {
+    background: white;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-top: 36px;
+
+
+}
+
+.block-button:hover {
+    transition: 1s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+.block1-title {
+    font-size: 34px;
+    font-weight: 400;
+
+}
+
+.informed-text {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 29px 0 79px 0;
+
+}
+
+.accordion-body {
+    background: #F2EDE7;
+    width: 1349px;
+    height: 960px;
+    padding: 96px 71px;
+    margin-top: 148px;
+
+
+}
+
+.acc-over {
+    font-weight: 400;
+    margin-bottom: 10px;
+
+
+}
+
+.acc-title {
+    font-weight: 400;
+    font-size: 65px;
+    margin-bottom: 121px;
+
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background: #f2dadf;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: transparent;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: transparent;
+    float: right;
+    margin-left: 5px;
+}
+
+/*.active:after {*/
+/*    content: "\2796"; !* Unicode character for "minus" sign (-) *!*/
+/*}*/
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');*/
+
+/* Sets the background color of the body to blue. Sets font to Rubik */
+
+
+/* Aligns the heading text to the center. */
+
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+    width: 563px;
+    /*margin: 90px auto;*/
+    position: relative;
+    color: black;
+    background-color: transparent;
+    padding: 45px 45px;
+}
+
+.accordion .container1 {
+    position: relative;
+    margin: 10px 10px;
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+    position: relative;
+    background: transparent;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+    width: 589px;
+    margin-left: 0;
+    border: 1px solid black;
+    transition: .7s;
+}
+
+.accordion hr:hover {
+    transition: .7s;
+    background: #e1035f;
+
+}
+
+.container1 {
+    position: absolute;
+}
+
+.accordion .container1.active .content {
+    height: 210px;
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container1.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+
+.accordion .container1.active .label::after {
+    content: '+';
+    font-size: 30px;
+}
+
+.share-wrap {
+    display: flex;
+
+}
+
+.share-img {
+    z-index: -5;
+
+}
+
+.share-bl1 {
+    margin: 154px 183px 264px 148px;
+
+}
+
+.over-text-share {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.share-title {
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 37px;
+
+}
+
+.share-text {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 36px;
+
+}
+
+.share-button {
+    background: #F9C600;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 2s;
+    margin-top: 36px;
+
+}
+
+.share-button:hover {
+    transition: .6s;
+    border: none;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 11%, rgba(253, 29, 29, 1) 50%, rgba(251, 47, 253, 1) 69%, rgba(252, 176, 69, 1) 93%);
+}
+
+.case-wrap {
+    display: flex;
+    margin-bottom: 46px;
+    width: 1337px;
+    margin-left: 12px;
+
+}
+
+.acc-tx {
+    display: block;
+
+}
+
+.acc-over {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.case-block1 {
+    height: 584px;
+    width: 530px;
+    background: #F2EDE7;
+    border-radius: 10px 0 0 10px;
+
+
+}
+
+.case-block2 {
+    height: 584px;
+    width: 790px;
+    background: #F9C600;
+    border-radius: 0 10px 10px 0;
+
+
+}
+
+.case-img {
+    position: absolute;
+
+}
+
+.case-wrap {
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.case-title1 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 132px 27px 116px;
+
+}
+
+.case-text1 {
+    font-weight: 400;
+    font-size: 17px;
+    padding: 0 121px 36px 116px;
+
+
+}
+
+.case-title2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin: 79px 121px 81px 116px;
+
+
+}
+
+.case-text2 {
+    font-weight: 400;
+    margin-bottom: 5px;
+
+}
+
+.case-img2 {
+    display: flex;
+    margin: 0 0 104px 116px;
+
+}
+
+.case-information {
+    display: flex;
+
+}
+
+.case-text2 {
+    display: block;
+
+}
+
+.case-text {
+    display: block;
+
+}
+
+.rxt {
+    padding: 24px;
+
+}
+
+.over-case {
+    margin: 80px 0 17px 116px;
+
+}
+
+.case-btn {
+    background: transparent;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 2s;
+    margin: 0 116px;
+
+
+}
+
+.case-btn:hover {
+    transition: .6s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+.launch {
+    background: #0B2330;
+    width: 1349px;
+    height: 423px;
+
+}
+
+.launch-wrap {
+    text-align: center;
+
+}
+
+.launch-hr {
+    margin: 95px 32px 0 32px;
+    background: grey;
+
+}
+
+.launch-title-1 {
+    font-weight: 400;
+    font-size: 42px;
+    color: white;
+    padding-top: 53px;
+}
+
+.launch-title-2 {
+    font-weight: 400;
+    font-size: 42px;
+    color: white;
+}
+
+.launch-text {
+    font-weight: 400;
+    font-size: 17px;
+    padding: 31px 369px;
+    color: white;
+
+}
+
+.launch-btn {
+    background: #F9C600;
+    width: 163px;
+    height: 54px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    margin: 0 116px;
+
+
+}
+
+.launch-btn:hover {
+    transition: 1s;
+    border: none;
+    background: -webkit-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: -moz-linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+    background: linear-gradient(45deg, rgb(207, 154, 154) 9%, rgb(82, 182, 151), rgb(225, 208, 242));
+}
+
+.product {
+    width: 1349px;
+    height: 678px;
+    background: #0B2330;
+
+
+}
+
+.product-img {
+    display: inline-block;
+    padding-left: 32px;
+    padding-top: 100px;
+
+
+}
+
+.product-block {
+    margin-left: 70px;
+
+
+}
+
+.product-wrap {
+    display: flex;
+    margin-bottom: 220px;
+
+}
+
+.product-title {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 13px;
+    color: #F9C600;
+
+}
+
+.product-text {
+    color: #94A0A4;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 13px;
+
+}
+
+.product-under {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 69px;
+
+}
+
+.bk {
+    color: grey;
+
+}
+
+.slider-icons {
+    justify-content: space-between;
+    display: flex;
+    column-gap: 23px;
+    list-style: none;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    color: grey;
+    /*background: black;*/
+
+}
+
+.slider-icon {
+    display: flex;
+}
+
+.slider-link {
+    color: grey;
+
+}
+
+.product-tx {
+    font-weight: 400;
+    padding-left: 85px;
+    color: #94A0A4;
+
+}
+
+/*важная часть*/
+.open-popup {
+    color: #FFFFFF;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+}
+
+.popup__bg.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+/*Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #cfd0d3;
+    outline: none;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label-text {
+    color: #2982ff;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+    background: #B08EAD;
+    border: none;
+
+}
+
+.popup button:hover {
+    background: #fff;
+    color: #B08EAD;
+    transition: 0.5s all;
+    border: 1px solid #CEB3CB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
